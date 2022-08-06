@@ -1,0 +1,234 @@
+*,
+*::before, * ::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fs-t:20px;
+    --c-two: #111;
+    --c--three:cornflowerblue;
+    --c--av: #04AA6D;
+    --c--an:antiquewhite;
+    --c--b: black;
+  } 
+body{
+    background-color: var(--c--b);
+    color:var(--c--three);
+}
+.my-skills ,.about-me , .my-work {
+    padding: 80px;
+  }
+
+hr{
+    width:20%;
+    margin:0 auto;
+  }
+
+.section__title{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.section__subtitle{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:var(--c--an);
+  }
+
+/* for navbar */
+nav{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:var(--c-two);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(8, 30, 224, 0.185);
+  }
+.nav__list {
+    list-style-type: none; 
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content:center;
+}
+.nav__item{
+    float: left;
+  }
+.nav__link{
+    display: block;
+    color:var(--c--an);
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav__link:hover {
+    background-color:var(--c--b);
+}
+/* end */
+
+/* intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:right;
+    width: 100%;
+    height: 570px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://picturepark.com/data/Company/_1200x630_crop_center-center_none/frontend-job.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+span {
+    color:red;
+}
+.intro p {
+    font-size: 20px;
+}
+h1{
+ font-size: 56px;
+}
+/* end */
+
+/* about-me sec */
+.about_img {
+    width: 15%;
+    height: 250px;
+    float:left;
+    padding-top:40px;
+  }
+
+.about-me_cont{
+    padding-top: 40px;
+    padding-left: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align:start;
+}
+.about-me span{
+    color:var(--c--three);
+}
+/* end */
+
+
+/* my-skills sec */
+.basic{
+    display: flex;
+    justify-content: center;
+}
+.my-skills span{
+    color:var(--c--an);
+}
+.container{
+    width: 50%;
+    padding: 30px 30px 50px;
+    border-radius: 10px;
+} 
+.skills{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.avg{
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+}
+.avg_html{
+    animation: html 3s forwards;
+}
+@keyframes html{
+    100%{
+        width: 90%;
+    }
+}
+.avg_css{
+    animation: css 3s forwards;
+}
+@keyframes css{
+    100%{
+        width: 80%;
+    }
+}
+.avg_js{
+    animation: js 3s forwards;
+}
+@keyframes js {
+    100%{
+        width: 70%;
+    }
+}
+.avg_c{
+    animation: c 3s forwards;
+}
+@keyframes c{
+    100%{
+        width: 70%;
+    }
+} 
+.avg_py{
+    animation: py 3s forwards;
+}
+@keyframes py{
+    100%{
+        width: 60%;
+    }
+} 
+.avg_j{
+    animation: java 3s forwards;
+}
+@keyframes java{
+    100%{
+        width: 50%;
+    }
+} 
+/* end */
+
+/* my-work */
+.work-container{
+	display:flex;
+	justify-content:space-between;
+}
+.work{
+	width: 300px;
+	height:320px;
+    box-shadow: 0 10px 20px 0 rgba(114, 110, 110, 0.2), 0 4px 10px 0 rgba(8, 30, 224, 0.185);
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0px 4px;
+}
+.port__img {
+    float: left;
+    width:  100%;
+    height: 50%;
+    object-fit: cover;
+  }  
+
+/* end */ 
+
+/* footer */
+footer { 
+    text-align: center;
+    padding:10px;
+    background-color:var(--c-two);
+  }
+.social-list {
+    display: flex;
+    justify-content:center;
+  }
+.so__item{
+    list-style-type: none;
+  }
+.fa:hover {
+    opacity: 0.7;
+  }
+.fa{
+    padding: 30px;
+    font-size:var(--fs-t);
+    color:var(--c--an);
+    text-decoration: none;
+    margin: 5px 10px;
+  }
+/* end */
